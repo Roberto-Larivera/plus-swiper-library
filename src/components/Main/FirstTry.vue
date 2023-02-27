@@ -1,10 +1,6 @@
 <script>
-import FirstTry from './FirstTry.vue'
 export default {
-  name: 'AppMain',
-  components:{
-    FirstTry,
-  },
+  name: 'FirstTry',
   data(){
     return{
 
@@ -16,7 +12,7 @@ export default {
 
 <template>
   <div>
-    <FirstTry />
+    FirstTry
   </div>
 </template>
 
