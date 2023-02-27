@@ -9,6 +9,7 @@ import SeventhTry from './SeventhTry.vue'
 import EighthTry from './EighthTry.vue'
 import NinethTry from './NinethTry.vue'
 import ThenthTry from './ThenthTry.vue'
+import EleventhTry from './EleventhTry.vue'
 export default {
   name: 'AppMain',
   components:{
@@ -22,6 +23,7 @@ export default {
     EighthTry,
     NinethTry,
     ThenthTry,
+    EleventhTry,
   },
   data(){
     return{
@@ -44,6 +46,7 @@ export default {
     <EighthTry />
     <NinethTry />
     <ThenthTry />
+    <EleventhTry />
   </div>
 </template>
 
