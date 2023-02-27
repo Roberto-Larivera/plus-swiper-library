@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
 
 export default {
-  name: 'TwelfthTry',
+  name: 'Thirteenth',
   components: {
     Swiper,
     SwiperSlide,
@@ -31,19 +31,21 @@ export default {
 </script>
 
 <template>
-  <div id="twelfth-try" class="container p-5">
+  <div id="Thirteenth" class="container p-5">
     <div class="row">
       <div class="col text-center">
         <h2>
-          TwelfthTry Carousel - Slides for View Auto
+          Thirteenth Carousel - Slides for View Auto
         </h2>
       </div>
     </div>
     <div class="row">
       <div class="col">
+        <!-- :slidesPerView="'auto'" invece di auto puoi mettere un numero di slide da vedere come nei esempi passati -->
         <swiper 
           class="mySwiper" 
           :slidesPerView="'auto'"
+          :centeredSlides="true"
           :spaceBetween="30" 
           :pagination="{
             clickable: true
@@ -90,7 +92,7 @@ export default {
 // in questo caso rimuovere w-100 per far si che le classi vngono aggiunte correttamente dalla libreria
 // in uesto caso venonmo inserite delle classi aggiuntive solo per far v edere come si automatizza con delle dimensioni diverse
 
-#twelfth-try{
+#Thirteenth{
   .mySwiper {
   background-color: lightcoral;
   width: 600px;
@@ -117,17 +119,5 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.swiper-slide {
-  width: 80%;
-}
-
-.swiper-slide:nth-child(2n) {
-  width: 60%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 40%;
 }
 </style>
