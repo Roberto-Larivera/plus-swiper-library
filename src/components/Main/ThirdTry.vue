@@ -35,7 +35,7 @@ export default {
     <div class="row">
       <div class="col text-center">
         <h2>
-         Third Carousel - Pagination
+          ThirdTry Carousel - Pagination
         </h2>
       </div>
     </div>

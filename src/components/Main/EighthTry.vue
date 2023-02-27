@@ -85,6 +85,8 @@ export default {
 
 <style lang="scss">
 
+// rimuoviamo il scoped è inseriamo tutto dentro un id così che crea problemi
+
 
 #eighth-try{
   .mySwiper {

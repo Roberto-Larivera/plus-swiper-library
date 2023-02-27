@@ -35,7 +35,7 @@ export default {
     <div class="row">
       <div class="col text-center">
         <h2>
-         Second Carousel - Navigation
+          SecondTry Carousel - Navigation
         </h2>
       </div>
     </div>

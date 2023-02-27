@@ -41,7 +41,7 @@ export default {
     <div class="row">
       <div class="col text-center">
         <h2>
-          NinethTry Carousel - Pagination Custom
+          NinethTry Carousel - Pagination Custom Vertical
         </h2>
       </div>
     </div>
@@ -86,7 +86,7 @@ export default {
 </template>
 
 <style lang="scss">
-
+// rimuoviamo il scoped è inseriamo tutto dentro un id così che crea problemi
 
 #nineth-try{
   .mySwiper {

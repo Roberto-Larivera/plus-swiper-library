@@ -5,15 +5,20 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/pagination';
+
+import { Pagination } from 'swiper';
 
 export default {
-  name: 'FirstTry',
+  name: 'ThenthTry',
   components: {
     Swiper,
     SwiperSlide,
   },
   setup() {
-    return {};
+    return {
+      modules: [Pagination],
+    };
   },
   data() {
     return {
@@ -26,17 +31,19 @@ export default {
 </script>
 
 <template>
-  <div class="container p-5">
+  <div id="thenth-try" class="container p-5">
     <div class="row">
       <div class="col text-center">
         <h2>
-          FirstTry Carousel - Default
+          ThenthTry Carousel - Space Between
         </h2>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <swiper class="mySwiper">
+        <swiper class="mySwiper" :spaceBetween="30" :pagination="{
+          clickable: true
+        }" :modules="modules">
           <swiper-slide class="w-100 h-100">
             <img src="https://picsum.photos/600/300" alt="">
           </swiper-slide>
@@ -71,8 +78,12 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped>
-.mySwiper {
+<style lang="scss">
+// rimuoviamo il scoped è inseriamo tutto dentro un id così che crea problemi
+//si deve aggiungere la parte css già pronta volendo dentro le demo
+
+#thenth-try{
+  .mySwiper {
   background-color: lightcoral;
   width: 600px;
   height: 300px;
@@ -80,5 +91,23 @@ export default {
 
 img {
   height: 100%;
+}
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

@@ -36,7 +36,7 @@ export default {
     <div class="row">
       <div class="col text-center">
         <h2>
-          Fourth Carousel - Navigation & Pagination
+          FourthTry Carousel - Navigation & Pagination
         </h2>
       </div>
     </div>
