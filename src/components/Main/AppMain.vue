@@ -11,7 +11,8 @@ import NinethTry from './NinethTry.vue'
 import ThenthTry from './ThenthTry.vue'
 import EleventhTry from './EleventhTry.vue'
 import TwelfthTry from './TwelfthTry.vue'
-import Thirteenth from './Thirteenth.vue'
+import ThirteenthTry from './ThirteenthTry.vue'
+import FourteenthTry from './FourteenthTry.vue'
 export default {
   name: 'AppMain',
   components:{
@@ -27,7 +28,8 @@ export default {
     ThenthTry,
     EleventhTry,
     TwelfthTry,
-    Thirteenth,
+    ThirteenthTry,
+    FourteenthTry,
   },
   data(){
     return{
@@ -52,7 +54,8 @@ export default {
     <ThenthTry />
     <EleventhTry />
     <TwelfthTry />
-    <Thirteenth />
+    <ThirteenthTry />
+    <FourteenthTry />
   </div>
 </template>
 

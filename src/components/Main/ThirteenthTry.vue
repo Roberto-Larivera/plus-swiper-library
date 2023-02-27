@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
 
 export default {
-  name: 'Thirteenth',
+  name: 'ThirteenthTry',
   components: {
     Swiper,
     SwiperSlide,
@@ -31,11 +31,11 @@ export default {
 </script>
 
 <template>
-  <div id="Thirteenth" class="container p-5">
+  <div id="ThirteenthTry" class="container p-5">
     <div class="row">
       <div class="col text-center">
         <h2>
-          Thirteenth Carousel - Slides for View Auto
+          ThirteenthTry Carousel - Centered Auto
         </h2>
       </div>
     </div>
@@ -90,9 +90,8 @@ export default {
 // rimuoviamo il scoped è inseriamo tutto dentro un id così che crea problemi
 //si deve aggiungere la parte css già pronta volendo dentro le demo
 // in questo caso rimuovere w-100 per far si che le classi vngono aggiunte correttamente dalla libreria
-// in uesto caso venonmo inserite delle classi aggiuntive solo per far v edere come si automatizza con delle dimensioni diverse
 
-#Thirteenth{
+#ThirteenthTry{
   .mySwiper {
   background-color: lightcoral;
   width: 600px;
