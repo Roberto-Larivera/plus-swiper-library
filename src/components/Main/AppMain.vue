@@ -2,12 +2,14 @@
 import FirstTry from './FirstTry.vue'
 import SecondTry from './SecondTry.vue'
 import ThirdTry from './ThirdTry.vue'
+import FourthTry from './FourthTry.vue'
 export default {
   name: 'AppMain',
   components:{
     FirstTry,
     SecondTry,
     ThirdTry,
+    FourthTry,
   },
   data(){
     return{
@@ -23,6 +25,7 @@ export default {
     <FirstTry />
     <SecondTry />
     <ThirdTry />
+    <FourthTry />
   </div>
 </template>
 
