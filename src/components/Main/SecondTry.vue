@@ -5,15 +5,20 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 
 // Import Swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper';
 
 export default {
-  name: 'FirstTry',
+  name: 'SecondTry',
   components: {
     Swiper,
     SwiperSlide,
   },
   setup() {
-    return {};
+    return {
+      modules: [Navigation],
+    };
   },
   data() {
     return {
@@ -30,13 +35,13 @@ export default {
     <div class="row">
       <div class="col text-center">
         <h2>
-          First Carousel - Default
+         Second Carousel - Navigation
         </h2>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <swiper class="mySwiper">
+        <swiper class="mySwiper" :navigation="true" :modules="modules">
           <swiper-slide class="w-100 h-100">
             <img src="https://picsum.photos/600/300" alt="">
           </swiper-slide>
