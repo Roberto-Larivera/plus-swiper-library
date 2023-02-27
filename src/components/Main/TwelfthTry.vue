@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper';
 
 export default {
-  name: 'EleventhTry',
+  name: 'TwelfthTry',
   components: {
     Swiper,
     SwiperSlide,
@@ -31,19 +31,25 @@ export default {
 </script>
 
 <template>
-  <div id="eleventh-try" class="container p-5">
+  <div id="twelfth-try" class="container p-5">
     <div class="row">
       <div class="col text-center">
         <h2>
-          EleventhTry Carousel - Slides for View Space Between
+          TwelfthTry Carousel - SlideS for View Auto
         </h2>
       </div>
     </div>
     <div class="row">
       <div class="col">
-        <swiper class="mySwiper" :slidesPerView="3" :spaceBetween="30" :pagination="{
-          clickable: true
-        }" :modules="modules">
+        <swiper 
+          class="mySwiper" 
+          :slidesPerView="'auto'"
+          :spaceBetween="30" 
+          :pagination="{
+            clickable: true
+          }" 
+          :modules="modules"
+        >
           <swiper-slide class="h-100">
             <img src="https://picsum.photos/600/300" alt="">
           </swiper-slide>
@@ -82,8 +88,9 @@ export default {
 // rimuoviamo il scoped è inseriamo tutto dentro un id così che crea problemi
 //si deve aggiungere la parte css già pronta volendo dentro le demo
 // in questo caso rimuovere w-100 per far si che le classi vngono aggiunte correttamente dalla libreria
+// in uesto caso venonmo inserite delle classi aggiuntive solo per far v edere come si automatizza con delle dimensioni diverse
 
-#eleventh-try{
+#twelfth-try{
   .mySwiper {
   background-color: lightcoral;
   width: 600px;
@@ -110,5 +117,17 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
 }
 </style>
