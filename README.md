@@ -1,7 +1,9 @@
-# Vue 3 + Vite
+# plus-swiper-library
+## Prove di utilizzo della libreria Swiper
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- https://swiperjs.com/
+- https://swiperjs.com/get-started
+- https://swiperjs.com/demos
+- si consiglia di crearlo dentro un macro-componente apposito, 'contenitore > swiper'
+- si può aggiungere lo stile già pronto dentro la libreiria
+- in alcuni casi c'è bisogno di rimuovere il scoped dal css, e insrire il tutto dentro un id contenitore per far si che non influenza il resto della pagina
